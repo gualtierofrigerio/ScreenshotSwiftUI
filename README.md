@@ -2,6 +2,8 @@
 
 Add this package via SPM to take screenshots of SwiftUI Views
 
+If you're interested in the details on how it works please refer to my blog post [Take screenshot of SwiftUI Views](https://www.gfrigerio.com/take-screenshots-of-swiftui-views/)
+
 How it works
 -------
 
@@ -29,4 +31,3 @@ The package is distributed via SPM. Include the link below in Xcode to add it to
 https://github.com/gualtierofrigerio/ScreenshotSwiftUI.git
 ```
 
-More details on how it works can be found in my blog post [Take screenshot of SwiftUI Views](https://www.gfrigerio.com/take-screenshots-of-swiftui-views/)
