@@ -8,7 +8,9 @@
 import SwiftUI
 import UIKit
 
-/// This View is needed to create a UIViewRepresentable with a ScreenshotMaker
+/// This View is needed to create a UIViewRepresentable returning a ScreenshotMaker
+/// object in a closure.
+/// That object is used to capture a screenshot of the View
 public struct ScreenshotMakerView: UIViewRepresentable {
     let closure: (ScreenshotMaker) -> Void
     
