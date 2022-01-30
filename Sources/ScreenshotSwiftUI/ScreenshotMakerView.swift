@@ -16,12 +16,12 @@ public struct ScreenshotMakerView: UIViewRepresentable {
         self.closure = closure
     }
     
-    public func makeUIView(context: Context) -> ScreenshotMaker {
-        let view = ScreenshotMaker(frame: CGRect.zero)
+    public func makeUIView(context: Context) -> ScreenshotMakerUIView {
+        let view = ScreenshotMakerUIView(frame: CGRect.zero)
         return view
     }
     
-    public func updateUIView(_ uiView: ScreenshotMaker, context: Context) {
+    public func updateUIView(_ uiView: ScreenshotMakerUIView, context: Context) {
         DispatchQueue.main.async {
             closure(uiView)
         }
