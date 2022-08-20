@@ -38,7 +38,7 @@ extension View {
     /// with your View
     /// - Parameter closure: A closure with a ScreenshotMaker object
     /// - Returns: an overlay containing a ScreenshotMakerView
-    func screenshotMaker(_ closure: @escaping (ScreenshotMaker) -> Void) -> some View {
+    public func screenshotMaker(_ closure: @escaping (ScreenshotMaker) -> Void) -> some View {
         let screenshotView = ScreenshotMakerView(closure)
         return overlay(screenshotView.allowsHitTesting(false))
     }
